@@ -10,7 +10,7 @@ import twitterIcon from "../../assets/icons/x.png";
 import linkedinIcon from "../../assets/icons/in.png";
 import instagramIcon from "../../assets/icons/insta.png";
 import pinterestIcon from "../../assets/icons/pinterest.png";
-import youtubeIcon from "../../assets/icons/tube.png";
+import youtubeIcon from "../../assets/icons/youtube.png";
 
 function Footer() {
   return (

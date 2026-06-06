@@ -6,7 +6,8 @@ import Footer from "./pages/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import Testimonials from "./pages/Testimonials/Testimonials";
-import "../../task-project/src/css/global.css";
+import "./css/global.css";
+import TestimonialsNew from "./components/TestimonialsNew/TestimonialsNew";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       </section>
 
       <Footer />
+      {/* <TestimonialsNew /> */}
     </>
   );
 }

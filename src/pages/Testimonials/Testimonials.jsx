@@ -47,7 +47,7 @@ function Testimonials() {
   return (
     <section className="testimonials">
       <div className="testimonial-top">
-        <div className="gallery">
+        {/* <div className="gallery">
           {[t1, t2, t3, t4, t5, t6].map((img, index) => (
             <img
               key={index}
@@ -56,8 +56,9 @@ function Testimonials() {
               className={`gallery-img img-${index}`}
             />
           ))}
-        </div>
+        </div> */}
 
+        <TestimonialsNew />
         <h2>TESTIMONIALS</h2>
       </div>
 

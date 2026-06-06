@@ -1,162 +1,161 @@
-import React from "react";
+// import React from "react";
+// import "./TestimonialsNew.css";
+
+// import t1 from "../../assets/images/t1.png";
+// import t2 from "../../assets/images/t2.png";
+// import t3 from "../../assets/images/t4.png";
+// import t4 from "../../assets/images/t5.png";
+// import t5 from "../../assets/images/t6.png";
+// import t6 from "../../assets/images/t7.png";
+// import t7 from "../../assets/images/t8.png";
+// import t8 from "../../assets/images/t9.png";
+// import t9 from "../../assets/images/t10.png";
+// import t10 from "../../assets/images/t11.png";
+// import t11 from "../../assets/images/t12.png";
+// import t12 from "../../assets/images/t13.png";
+// import t13 from "../../assets/images/t14.png";
+// import t14 from "../../assets/images/t1.png";
+
+// const TestimonialsNew = () => {
+//   const columns = [
+//     { id: 1, offset: "0px", images: [t1, t2] },
+//     { id: 2, offset: "-40px", images: [t3, t4] },
+//     { id: 3, offset: "-10px", images: [t5] },
+//     { id: 4, offset: "-100px", images: [t6] },
+//     { id: 9, offset: "0px", images: [t7] },
+//     { id: 5, offset: "-100px", images: [t8] },
+//     { id: 6, offset: "-10px", images: [t9] },
+//     { id: 7, offset: "-40px", images: [t10, t11] },
+//     { id: 8, offset: "0px", images: [t12, t13] },
+//   ];
+
+//   return (
+//     <div className="testimonial-section">
+//       <div className="grid-container">
+//         {columns.map((col) => (
+//           <div
+//             key={col.id}
+//             className="grid-column"
+//             style={{ transform: `translateY(${col.offset})` }}
+//           >
+//             <div className="image-card placeholder"></div>
+
+//             {col.images.map((img, index) => (
+//               <div
+//                 key={index}
+//                 className="image-card"
+//                 style={{
+//                   backgroundImage: `url(${img})`,
+//                 }}
+//               />
+//             ))}
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* <h1 className="testimonial-heading">TESTIMONIALS</h1> */}
+//     </div>
+//   );
+// };
+
+// export default TestimonialsNew;
+import React, { useRef } from "react";
 import "./TestimonialsNew.css";
 
-function TestimonialsNew() {
-  // Exact mapping of the 9 columns based on the design
+import t1 from "../../assets/images/t1.png";
+import t2 from "../../assets/images/t2.png";
+import t3 from "../../assets/images/t4.png";
+import t4 from "../../assets/images/t5.png";
+import t5 from "../../assets/images/t6.png";
+import t6 from "../../assets/images/t7.png";
+import t7 from "../../assets/images/t8.png";
+import t8 from "../../assets/images/t9.png";
+import t9 from "../../assets/images/t10.png";
+import t10 from "../../assets/images/t11.png";
+import t11 from "../../assets/images/t12.png";
+import t12 from "../../assets/images/t13.png";
+import t13 from "../../assets/images/t14.png";
+
+const TestimonialsNew = () => {
+  const sliderRef = useRef(null);
+
+  const scrollLeft = () => {
+    sliderRef.current?.scrollBy({
+      left: -300,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    sliderRef.current?.scrollBy({
+      left: 300,
+      behavior: "smooth",
+    });
+  };
+
   const columns = [
-    [
-      { id: "1-1", type: "empty", height: "60px" },
-      {
-        id: "1-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=11",
-        height: "100px",
-      },
-      {
-        id: "1-3",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=12",
-        height: "160px",
-      },
-    ],
-    [
-      { id: "2-1", type: "empty", height: "50px" },
-      {
-        id: "2-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=13",
-        height: "150px",
-      },
-      {
-        id: "2-3",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=14",
-        height: "140px",
-      },
-    ],
-    [
-      { id: "3-1", type: "empty", height: "60px" },
-      {
-        id: "3-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=15",
-        height: "130px",
-      },
-    ],
-    [
-      { id: "4-1", type: "empty", height: "50px" },
-      {
-        id: "4-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=16",
-        height: "140px",
-      },
-    ],
-    [
-      { id: "5-1", type: "empty", height: "60px" },
-      {
-        id: "5-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=17",
-        height: "120px",
-      },
-    ],
-    [
-      { id: "6-1", type: "empty", height: "60px" },
-      {
-        id: "6-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=18",
-        height: "160px",
-      },
-    ],
-    [
-      { id: "7-1", type: "blue-box", height: "90px" },
-      {
-        id: "7-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=19",
-        height: "130px",
-      },
-    ],
-    [
-      { id: "8-1", type: "empty", height: "60px" },
-      {
-        id: "8-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=20",
-        height: "150px",
-      },
-      {
-        id: "8-3",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=21",
-        height: "140px",
-      },
-    ],
-    [
-      { id: "9-1", type: "empty", height: "50px" },
-      {
-        id: "9-2",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=22",
-        height: "120px",
-      },
-      {
-        id: "9-3",
-        type: "img",
-        src: "https://i.pravatar.cc/300?img=23",
-        height: "130px",
-      },
-    ],
+    { id: 1, offset: "0px", images: [t1, t2] },
+    { id: 2, offset: "-40px", images: [t3, t4] },
+    { id: 3, offset: "-10px", images: [t5] },
+    { id: 4, offset: "-100px", images: [t6] },
+    { id: 9, offset: "0px", images: [t7] },
+    { id: 5, offset: "-100px", images: [t8] },
+    { id: 6, offset: "-10px", images: [t9] },
+    { id: 7, offset: "-40px", images: [t10, t11] },
+    { id: 8, offset: "0px", images: [t12, t13] },
   ];
 
+  const allImages = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13];
+
   return (
-    <section className="testimonials-section">
-      <div className="testimonials-container">
-        <div className="gallery-grid">
-          {columns.map((col, colIndex) => (
-            <div key={colIndex} className={`gallery-col col-${colIndex + 1}`}>
-              {col.map((item) => {
-                // Render the light grey placeholder boxes
-                if (item.type === "empty") {
-                  return (
-                    <div
-                      key={item.id}
-                      className="box empty-box"
-                      style={{ height: item.height }}
-                    ></div>
-                  );
-                }
-                // Render the distinct blue bordered box
-                if (item.type === "blue-box") {
-                  return (
-                    <div
-                      key={item.id}
-                      className="box blue-box"
-                      style={{ height: item.height }}
-                    ></div>
-                  );
-                }
-                // Render the actual testimonial photos
-                return (
-                  <img
-                    key={item.id}
-                    src={item.src}
-                    alt="Testimonial profile"
-                    className="box img-box"
-                    style={{ height: item.height }}
-                  />
-                );
-              })}
-            </div>
+    <div className="testimonial-section">
+      {/* Desktop Layout */}
+      <div className="grid-container desktop-view">
+        {columns.map((col) => (
+          <div
+            key={col.id}
+            className="grid-column"
+            style={{ transform: `translateY(${col.offset})` }}
+          >
+            <div className="image-card placeholder"></div>
+
+            {col.images.map((img, index) => (
+              <div
+                key={index}
+                className="image-card"
+                style={{
+                  backgroundImage: `url(${img})`,
+                }}
+              />
+            ))}
+          </div>
+        ))}
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="mobile-view">
+        <button className="mobile-arrow left" onClick={scrollLeft}>
+          ❮
+        </button>
+
+        <div className="mobile-slider" ref={sliderRef}>
+          {allImages.map((img, index) => (
+            <div
+              key={index}
+              className="mobile-image-card"
+              style={{
+                backgroundImage: `url(${img})`,
+              }}
+            />
           ))}
         </div>
 
-        <h2 className="testimonials-title">TESTIMONIALS</h2>
+        <button className="mobile-arrow right" onClick={scrollRight}>
+          ❯
+        </button>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default TestimonialsNew;
