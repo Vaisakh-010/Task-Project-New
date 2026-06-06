@@ -9,8 +9,11 @@
 }
 
 .testimonial-top h2 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 100%;
+  font-family: "Inter";
 }
 
 .gallery {
@@ -48,10 +51,11 @@
 }
 
 .testimonial-content p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #555;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .testimonial-content h3 {
@@ -60,7 +64,10 @@
 }
 
 .testimonial-content span {
-  color: #777;
+  font-size: 18px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 400;
 }
 
 .navigation {
@@ -72,6 +79,7 @@
 }
 
 .navigation button {
+  color: #466378;
   border: none;
   background: transparent;
   font-size: 28px;
@@ -100,10 +108,13 @@
   }
 
   .testimonial-content p {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .navigation {
     gap: 15px;
+  }
+  .testimonial-top h2 {
+    font-size: 36px;
   }
 }

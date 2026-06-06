@@ -228,6 +228,13 @@
   .newsletter-text p {
     font-size: 14px;
   }
+  .newsletter-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 
   .newsletter-form input {
     font-size: 14px;
@@ -263,10 +270,16 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .social-icons {
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .footer-contact p {
+    display: flex;
+    justify-content: center;
   }
 }

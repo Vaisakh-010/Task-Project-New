@@ -27,7 +27,7 @@
 .brand-text {
   margin-top: 20px;
   color: #466378;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
@@ -35,9 +35,12 @@
 
 .description {
   margin-top: 30px;
-  line-height: 1.8;
-  color: #666;
-  font-size: 15px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+
+  font-weight: 400;
+  letter-spacing: 0%;
 }
 
 .read-btn {
@@ -144,7 +147,7 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
-  top: 63px;
+  top: 20px;
   position: relative;
 }
 

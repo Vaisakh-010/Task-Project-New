@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import t1 from "../../assets/images/t1.png";
 import t2 from "../../assets/images/t2.png";
-import t3 from "../../assets/images/t3.png";
+import t3 from "../../assets/images/t4.png";
 import t4 from "../../assets/images/t4.png";
 import t5 from "../../assets/images/t1.png";
 import t6 from "../../assets/images/t2.png";

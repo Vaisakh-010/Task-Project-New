@@ -63,7 +63,7 @@
 }
 
 .desktop-nav li:hover {
-  color: #ff8c00;
+  color: #030303;
   transform: translateY(-2px);
 }
 
@@ -135,6 +135,7 @@
   }
 
   .mobile-menu {
+    text-align: center;
     display: block;
     position: absolute;
     top: 70px;

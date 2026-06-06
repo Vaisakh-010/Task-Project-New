@@ -21,7 +21,7 @@ function Contact() {
               <input type="tel" placeholder="Phone" />
             </div>
 
-            <textarea rows="6" placeholder="Enter your comments here..." />
+            <textarea rows="6" placeholder="Enter your comments here any?" />
 
             <button type="submit">SUBMIT</button>
           </form>
