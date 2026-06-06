@@ -1,0 +1,236 @@
+.services {
+  padding: 30px 0;
+  background: #f5f5f5;
+}
+
+.services-container {
+  /* max-width: 1280px; */
+  margin: auto;
+  padding: 0 40px;
+
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT */
+
+.services-left {
+  width: 320px;
+}
+
+.services-left h2 {
+  font-size: 47px;
+  line-height: 100%;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Inter";
+}
+
+.brand-text {
+  margin-top: 20px;
+  color: #466378;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.description {
+  margin-top: 30px;
+  line-height: 1.8;
+  color: #666;
+  font-size: 15px;
+}
+
+.read-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  border: none;
+
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.counter {
+  display: block;
+  margin-top: 30px;
+  color: #666;
+}
+
+/* RIGHT */
+
+.services-right {
+  flex: 1;
+  display: flex;
+  gap: 15px;
+}
+
+.service-card {
+  flex: 1;
+  height: 500px;
+
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  position: relative;
+
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* Expand on hover */
+
+.services-right:hover .service-card {
+  flex: 0.8;
+}
+
+.services-right .service-card:hover {
+  flex: 1.8;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.15));
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 25px;
+}
+
+.content h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.content h4 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.content p {
+  color: #fff;
+  margin-top: 15px;
+
+  line-height: 1.7;
+
+  opacity: 0;
+  max-height: 0;
+
+  transition: 0.4s;
+}
+
+.service-card:hover .content p {
+  opacity: 1;
+  max-height: 150px;
+}
+
+.arrow-btn {
+  margin-top: 15px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+}
+.read-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  top: 63px;
+  position: relative;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .services-left {
+    width: 100%;
+    text-align: center;
+  }
+  .read-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    top: 0px;
+    position: relative;
+  }
+  .services-right {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    height: 420px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .services {
+    padding: 70px 0;
+  }
+
+  .services-container {
+    padding: 0 20px;
+  }
+
+  .services-left h2 {
+    font-size: 36px;
+  }
+
+  .services-right {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    height: 400px;
+    /* height: 611px; */
+    /* height: 800px; */
+  }
+
+  .services-right:hover .service-card,
+  .services-right .service-card:hover {
+    flex: unset;
+  }
+}
+@media (min-width: 450px) and (max-width: 768px) {
+  .service-card {
+    /* height: 400px; */
+    /* height: 611px; */
+    height: 800px;
+  }
+}
+.counter {
+  display: block;
+  margin-top: 30px;
+  color: #000000;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.active-count {
+  color: #f28f72;
+  font-weight: 700;
+}

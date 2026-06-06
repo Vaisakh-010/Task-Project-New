@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.navbar {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 0 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 100;
+}
+
+.logo {
+  color: #fff;
+  font-size: 58px;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.desktop-nav ul {
+  display: flex;
+  gap: 38px;
+  list-style: none;
+}
+
+.desktop-nav li {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile menu hidden by default */
+
+.mobile-menu {
+  display: none;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .logo {
+    font-size: 42px;
+  }
+
+  .desktop-nav ul {
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+    width: 220px;
+
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mobile-menu li {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .dot {
+    width: 16px;
+    height: 16px;
+  }
+}

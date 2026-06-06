@@ -1,0 +1,288 @@
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.newsletter {
+  padding: 80px 20px;
+  border-bottom: 1px solid #1d1d1d;
+  padding-bottom: 36px;
+}
+
+.newsletter-content {
+  max-width: 1400px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding-left: 137px;
+  padding-right: 137px;
+}
+
+.newsletter-text {
+  flex: 1;
+}
+
+.newsletter-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: "Inter";
+}
+
+.newsletter-text p {
+  max-width: 500px;
+  color: #ffffff;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+
+.newsletter-form {
+  flex: 1 1;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #474747;
+  border-radius: 1px;
+}
+.newsletter-form input {
+  flex: 1;
+
+  height: 70px;
+  padding: 0 25px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: white;
+  font-size: 16px;
+}
+
+.newsletter-form input::placeholder {
+  color: #9e9e9e;
+}
+
+.newsletter-form button {
+  width: 80px;
+  height: 70px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-form button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ======================
+     MAIN FOOTER
+  ====================== */
+
+.footer-main {
+  max-width: 1400px;
+  margin: auto;
+
+  padding: 80px 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  padding-left: 173px;
+  padding-right: 173px;
+}
+
+.footer-about h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer-about p {
+  color: #ffff;
+  line-height: 2;
+  max-width: 650px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 16px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Inter";
+}
+
+.footer-contact img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* ======================
+     BOTTOM BAR
+  ====================== */
+
+.footer-bottom {
+  border-top: 1px solid #1d1d1d;
+
+  max-width: 1400px;
+  margin: auto;
+
+  padding: 25px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-left: 173px;
+  padding-right: 173px;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: translateY(-3px);
+}
+
+/* ======================
+     TABLET
+  ====================== */
+
+@media (max-width: 992px) {
+  .newsletter-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 48px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    /* padding-left: 0px;
+    padding-right: 0px; */
+  }
+
+  .footer-about {
+    grid-column: span 2;
+  }
+}
+
+/* ======================
+     MOBILE
+  ====================== */
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 60px 15px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 36px;
+  }
+
+  .newsletter-text p {
+    font-size: 14px;
+  }
+
+  .newsletter-form input {
+    font-size: 14px;
+    height: 60px;
+  }
+  .newsletter-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .newsletter-form button {
+    width: 70px;
+    height: 60px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 15px;
+    /* padding-left: 0px;
+    padding-right: 0px; */
+    text-align: center;
+  }
+
+  .footer-about h2 {
+    font-size: 38px;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

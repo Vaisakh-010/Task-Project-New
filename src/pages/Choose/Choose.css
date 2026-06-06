@@ -1,0 +1,220 @@
+.why-choose {
+  position: relative;
+  padding: 30px 20px;
+  background: #ffffff;
+}
+
+/* Top Gray Area */
+
+.top-box {
+  max-width: 1200px;
+  height: 240px;
+
+  margin: 0 auto;
+
+  background: #efefef;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 50px;
+}
+
+.top-box h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-align: center;
+}
+
+/* Cards */
+
+.choose-cards {
+  max-width: 1200px;
+
+  margin: -90px auto 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 30px;
+}
+
+/* Individual Card */
+
+.choose-card {
+  position: relative;
+
+  width: 320px;
+  min-height: 360px;
+
+  padding: 25px;
+
+  border-radius: 8px;
+
+  transition: all 0.35s ease;
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+.choose-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Stagger Layout */
+
+.choose-card:nth-child(1) {
+  margin-top: 0;
+}
+
+.choose-card:nth-child(2) {
+  margin-top: 50px;
+}
+
+.choose-card:nth-child(3) {
+  margin-top: 0;
+}
+
+/* Number */
+
+.card-number {
+  font-size: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* Image */
+
+.card-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 75px;
+  height: 75px;
+
+  object-fit: cover;
+}
+
+/* Content */
+
+.card-content {
+  margin-top: 110px;
+}
+
+.card-content h3 {
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .top-box {
+    height: 200px;
+  }
+
+  .top-box h2 {
+    font-size: 34px;
+  }
+
+  .choose-cards {
+    margin-top: -60px;
+
+    flex-wrap: wrap;
+  }
+
+  .choose-card {
+    width: calc(50% - 15px);
+
+    margin-top: 0 !important;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 70px 15px;
+  }
+
+  .top-box {
+    height: auto;
+
+    padding: 40px 20px 100px;
+  }
+
+  .top-box h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .choose-cards {
+    margin-top: -70px;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .choose-card {
+    width: 100%;
+    max-width: 420px;
+
+    min-height: auto;
+
+    margin-top: 0 !important;
+  }
+
+  .card-number {
+    font-size: 46px;
+  }
+
+  .card-image {
+    width: 65px;
+    height: 65px;
+  }
+
+  .card-content {
+    margin-top: 90px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .top-box h2 {
+    font-size: 24px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+}
