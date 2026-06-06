@@ -226,3 +226,31 @@
   color: #f28f72;
   font-weight: 700;
 }
+.read-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  border: none;
+
+  margin-top: 30px;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  background: #ff6b00;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 107, 0, 0.3);
+}
+
+.read-btn:active {
+  transform: translateY(0);
+}
