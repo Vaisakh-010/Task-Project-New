@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Vibrant orange background with slightly rounded corners -->
+  <rect width="512" height="512" rx="110" fill="#FF6500"/>
+  <!-- Bold, white 'PR' text centered -->
+  <text x="50%" y="54%" font-family="Arial, Helvetica, sans-serif" font-size="280" font-weight="900" letter-spacing="-5" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">PR</text>
+</svg>
