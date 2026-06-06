@@ -11,7 +11,6 @@ function About() {
   return (
     <section className="about-section">
       <div className="about-container">
-        {/* Heading */}
         <div className="about-header">
           <h2>
             Think. Create.
@@ -20,7 +19,6 @@ function About() {
           </h2>
         </div>
 
-        {/* Content */}
         <div className="about-content">
           <div className="about-image">
             <img src={aboutImage} alt="Orange PR Team" />
@@ -43,7 +41,6 @@ function About() {
           </div>
         </div>
 
-        {/* Statistics */}
         <div className="stats-wrapper">
           <div className="stat-card">
             <div className="about-block">

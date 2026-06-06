@@ -13,8 +13,6 @@
   position: relative;
 }
 
-/* Left Image */
-
 .contact-image {
   width: 55%;
 }
@@ -25,8 +23,6 @@
   object-fit: cover;
   display: block;
 }
-
-/* Form Card */
 
 .contact-card {
   width: 60%;
@@ -48,8 +44,6 @@
   font-weight: 700;
   margin-bottom: 40px;
 }
-
-/* Form */
 
 .form-grid {
   display: grid;

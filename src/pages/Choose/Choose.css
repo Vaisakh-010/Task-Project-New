@@ -4,8 +4,6 @@
   background: #ffffff;
 }
 
-/* Top Gray Area */
-
 .top-box {
   max-width: 1200px;
   height: 240px;
@@ -28,8 +26,6 @@
   text-align: center;
 }
 
-/* Cards */
-
 .choose-cards {
   max-width: 1200px;
 
@@ -41,8 +37,6 @@
 
   gap: 30px;
 }
-
-/* Individual Card */
 
 .choose-card {
   position: relative;
@@ -65,8 +59,6 @@
   transform: translateY(-10px);
 }
 
-/* Stagger Layout */
-
 .choose-card:nth-child(1) {
   margin-top: 0;
 }
@@ -79,16 +71,12 @@
   margin-top: 0;
 }
 
-/* Number */
-
 .card-number {
   font-size: 58px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1;
 }
-
-/* Image */
 
 .card-image {
   position: absolute;
@@ -100,8 +88,6 @@
 
   object-fit: cover;
 }
-
-/* Content */
 
 .card-content {
   margin-top: 110px;
@@ -125,10 +111,6 @@
   line-height: 1.8;
 }
 
-/* ========================= */
-/* Tablet */
-/* ========================= */
-
 @media (max-width: 992px) {
   .top-box {
     height: 200px;
@@ -150,10 +132,6 @@
     margin-top: 0 !important;
   }
 }
-
-/* ========================= */
-/* Mobile */
-/* ========================= */
 
 @media (max-width: 768px) {
   .why-choose {
@@ -202,8 +180,6 @@
     margin-top: 90px;
   }
 }
-
-/* Small Mobile */
 
 @media (max-width: 480px) {
   .top-box h2 {

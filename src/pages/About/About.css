@@ -7,12 +7,9 @@
 }
 
 .about-container {
-  /* max-width: 1280px; */
   margin: auto;
   padding: 0 40px;
 }
-
-/* Heading */
 
 .about-header {
   margin-bottom: 60px;
@@ -25,8 +22,6 @@
   line-height: 100%;
   font-family: "Inter";
 }
-
-/* Content */
 
 .about-content {
   display: flex;
@@ -73,8 +68,6 @@
   margin-top: 10px;
 }
 
-/* Statistics */
-
 .stats-wrapper {
   margin-top: 80px;
 
@@ -119,8 +112,6 @@
   border-radius: 2px;
 }
 
-/* Tablet */
-
 @media (max-width: 992px) {
   .about-container {
     padding: 0 24px;
@@ -144,8 +135,6 @@
     text-align: center;
   }
 }
-
-/* Mobile */
 
 @media (max-width: 768px) {
   .about-section {
@@ -190,8 +179,6 @@
     border-bottom: none;
   }
 }
-
-/* Small Mobile */
 
 @media (max-width: 480px) {
   .about-container {

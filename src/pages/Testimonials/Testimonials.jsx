@@ -57,7 +57,6 @@ function Testimonials() {
             />
           ))}
         </div>
-        {/* <TestimonialsNew /> */}
 
         <h2>TESTIMONIALS</h2>
       </div>

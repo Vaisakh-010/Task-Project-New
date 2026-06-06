@@ -15,7 +15,6 @@ import youtubeIcon from "../../assets/icons/tube.png";
 function Footer() {
   return (
     <footer className="footer">
-      {/* Newsletter Section */}
       <div className="newsletter">
         <div className="newsletter-content">
           <div className="newsletter-text">
@@ -37,7 +36,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Main Footer */}
       <div className="footer-main">
         <div className="footer-about">
           <h2>ORANGE PR</h2>
@@ -83,7 +81,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>
           © 2025 Orange PR Agency. | Design & Development by MightyWarners
